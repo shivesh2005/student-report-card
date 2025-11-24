@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Report Card</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Student Report Card System</h1>
+  </header>
+
+  <section id="form-section">
+    <h2>Add / Edit Student</h2>
+    <form id="studentForm">
+      <input type="number" id="roll" placeholder="Roll No" required />
+      <input type="text" id="name" placeholder="Name" required />
+      <input type="number" id="p" placeholder="Physics" required />
+      <input type="number" id="c" placeholder="Chemistry" required />
+      <input type="number" id="m" placeholder="Maths" required />
+      <input type="number" id="e" placeholder="English" required />
+      <input type="number" id="cs" placeholder="CS" required />
+      <button type="submit">Save</button>
+    </form>
+  </section>
+
+  <section id="table-section">
+    <h2>All Students</h2>
+    <table id="studentsTable">
+      <thead>
+        <tr>
+          <th>Roll</th>
+          <th>Name</th>
+          <th>P</th>
+          <th>C</th>
+          <th>M</th>
+          <th>E</th>
+          <th>CS</th>
+          <th>%</th>
+          <th>Grade</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
